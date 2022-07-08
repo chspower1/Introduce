@@ -126,7 +126,7 @@ a {
 
         justify-content: space-between;
     }
-    .about-me text-box{
+    .about-me .text-box{
         width:170px;
     }
     .education .text-box {
