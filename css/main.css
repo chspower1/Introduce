@@ -1,0 +1,165 @@
+article {
+    height: 600px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+}
+
+.main {
+    width: 100vw;
+    height: 1000px;
+    background-image: url("../img/main.png");
+}
+.about-me {
+    background-image: url("../img/man.png");
+}
+.education {
+    background-image: url("../img/book.png");
+}
+.career {
+    background-image: url("../img/career.png");
+}
+.skills {
+    background-image: url("../img/skill.png");
+}
+.elice {
+    background-image: url("../img/dream.png");
+}
+.main__text {
+    font-size: 120px;
+    font-weight: bold;
+}
+a {
+    color: var(--gray);
+}
+.text-box {
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+.text-box__title {
+    position: center;
+    font-size: 50px;
+}
+.text-box__row {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.education .text-box__column {
+    text-align: right;
+}
+.education .text-box {
+    position: absolute;
+    right: 200px;
+    align-items: flex-end;
+}
+.education .text-box__row {
+    justify-content: flex-end;
+}
+.text-box__subtitle {
+    font-size: 15px;
+    color: #d9d9d9;
+}
+
+.career .text-box {
+    position: absolute;
+    left: 200px;
+    align-items: flex-start;
+}
+
+.career .text-box__row {
+    justify-content: flex-start;
+}
+
+.skills .text-box {
+    position: absolute;
+    right: 350px;
+    align-items: flex-end;
+}
+.skills .text-box__row {
+    justify-content: flex-end;
+}
+.elice .text-box {
+    width: 600px;
+}
+
+@media all and (max-width: 900px) {
+    article {
+        height: 200px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .main {
+        height: 300px;
+    }
+
+    .main__text {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .text-box {
+        display: flex;
+        font-size: 8px;
+        flex-direction: column;
+        align-items: center;
+        width: 130px;
+    }
+    .text-box__title {
+        position: center;
+        font-size: 17px;
+    }
+    .text-box__row {
+        margin-top: 17px;
+        display: flex;
+
+        justify-content: space-between;
+    }
+    .education .text-box {
+        display: flex;
+        position: absolute;
+        right: 67px;
+        justify-content: flex-end;
+    }
+    .education .text-box__row {
+        justify-content: flex-end;
+    }
+    .text-box__subtitle {
+        display: flex;
+        font-size: 5px;
+        color: #d9d9d9;
+    }
+
+    .career .text-box {
+        position: absolute;
+        left: 67px;
+        align-items: flex-start;
+    }
+
+    .career .text-box__row {
+        justify-content: flex-start;
+    }
+
+    .skills .text-box {
+        position: absolute;
+        right: 67px;
+        align-items: flex-end;
+    }
+    .skills .text-box__row {
+        justify-content: flex-end;
+    }
+    .elice .text-box {
+        width: 250px;
+    }
+}

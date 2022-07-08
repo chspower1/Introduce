@@ -1,0 +1,16 @@
+footer {
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div {
+    color: var(--gray);
+    text-align: center;
+}
+@media all and (max-width: 900px) {
+    footer {
+        font-size: 5px;
+        height: 40px;
+    }
+}
